@@ -2,6 +2,7 @@
   "cSpell.words": [
     "camelcase",
     "clsx",
+    "hookform",
     "Imaginify",
     "nextjs",
     "outpainting",
@@ -9,5 +10,6 @@
     "tailwindcss",
     "trpc",
     "xlink"
-  ]
+  ],
+  "css.customData": [".vscode/tailwind.json"]
 }
