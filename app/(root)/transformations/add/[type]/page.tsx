@@ -1,4 +1,5 @@
 import Header from "@/components/shared/Header";
+import MediaUploader from "@/components/shared/MediaUploader";
 import TransformationForm from "@/components/shared/TransformationForm";
 import { transformationTypes } from "@/constants";
 import { getUserById } from "@/lib/actions/user.actions";

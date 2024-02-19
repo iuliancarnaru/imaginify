@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 // import { dark } from "@clerk/themes";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/toaster";
 
 const IBMPlex = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={cn("font-IBMPlex antialiased", IBMPlex.variable)}>
           {children}
+          <Toaster />
           <SpeedInsights />
         </body>
       </html>
