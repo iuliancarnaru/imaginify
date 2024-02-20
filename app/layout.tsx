@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 // import { dark } from "@clerk/themes";
 import "./globals.css";
 import { cn } from "@/lib/utils";
@@ -33,6 +34,7 @@ export default function RootLayout({
         <body className={cn("font-IBMPlex antialiased", IBMPlex.variable)}>
           {children}
           <Toaster />
+          <Analytics />
           <SpeedInsights />
         </body>
       </html>
